@@ -1,0 +1,87 @@
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+      <link href="style.css" rel="stylesheet" type="text/css" />
+      <link href="reset.css" rel="stylesheet" type="text/css" />
+     
+   </head>
+  
+   <body class="hidden">
+      <div id="tablet">
+
+	<style>
+	.center1 {
+	  margin: 0;
+	  position: absolute;
+	  top: 101.7%;
+	  left: 50%;
+	  -ms-transform: translate(-50%, -50%);
+	  transform: translate(-50%, -50%);
+	}
+	</style>
+
+<div class="container">
+  <div class="center1">
+ 	 <input type="button" style="color:green; font-size:8px" value=" ◄◄ " onclick="history.back()">
+  </div>
+
+	<style>
+	.center2 {
+	  margin: 0;
+	  position: absolute;
+	  top: -1.9%;
+	  left: 48.8%;
+	  -ms-transform: translate(-50%, -50%);
+	  transform: translate(-50%, -50%);
+	}
+	</style>
+
+<div class="container">
+  <div class="center2">
+ 	 <input type="button" style="color:orange; font-size:8px" value="RESET" onclick="window.location.href = 'index.html';">
+  </div>
+
+	<style>
+	.center3 {
+	  margin: 0;
+	  position: absolute;
+	  top: -1.9%;
+	  left: 52.2%;
+	  -ms-transform: translate(-50%, -50%);
+	  transform: translate(-50%, -50%);
+	}
+	</style>
+
+<div class="container">
+  <div class="center3">
+ 	 <input type="button" style="color:red; font-size:8px" value="  •  " onclick="CloseCAD()">
+		<script> 
+		function CloseCAD() {
+		$.post('http://TonyTablet/NUIFocusOff', JSON.stringify({}));
+		}
+		</script>
+  </div>
+
+
+</div>
+
+         <div class="content">
+            
+           <div id ="blackbar"><style="width: 60%; margin: 0px auto;"><font size="-1"> ••• State6 OS V2.0 ••• Press "F2" to open/close ••• </font><font size="-6">       </font></div>
+                    <iframe src="menu.html" width="1100" height="540" scrolling="yes" marginwidth="0" marginheight="0" vspace="0" hspace="0"></iframe>
+
+		<!--Replace the link with your desired website-->
+
+			  
+            </div> 
+  
+         </div>
+      </div>
+
+
+      
+    
+      <script src="script.js" type="text/javascript"></script>
+   </body>
+</html>
